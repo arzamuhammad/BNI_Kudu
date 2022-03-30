@@ -250,7 +250,7 @@ CREATE EXTERNAL TABLE default.SRI_101_104_BORM_STG
       Update_Process_Id INTEGER
       )
       ROW FORMAT DELIMITED
-      FIELDS TERMINATED BY ','
+      FIELDS TERMINATED BY ';'
       STORED AS TEXTFILE
       LOCATION 's3a://mardiyan-aws-2201-bucket/data/tmp/bni/SRI_101_104_BORM/'
       TBLPROPERTIES ('skip.header.line.count'='1');
